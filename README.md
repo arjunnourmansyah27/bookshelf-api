@@ -1,4 +1,4 @@
-# proyek-submission-bookshelf-api
+# proyek-submission-bookshelf-api ARJUN NOURMANSYAH RAMDANI
 Proyek Submission Bookshelf API | Tugas Akhir Kelas Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google Cloud
 
 Kriteria
@@ -60,12 +60,6 @@ API yang Anda buat harus dapat menampilkan seluruh buku yang disimpan melalui _r
 *   Method : **GET**
 *   URL: **/books**
     
-
-Server harus mengembalikan respons dengan:
-
-*   Status Code : **200**
-*   Response Body:
-    
  
 Jika **belum** terdapat buku yang dimasukkan, _server_ bisa merespons dengan _array_ books kosong.
 
@@ -77,18 +71,6 @@ API yang Anda buat harus dapat menampilkan seluruh buku yang disimpan melalui _r
 *   Method : **GET**
 *   URL: **/books/{bookId}**
     
-
-Bila buku dengan id yang dilampirkan oleh _client_ tidak ditemukan, maka _server_ harus mengembalikan respons dengan:
-
-*   Status Code : **404**
-*   Response Body:
-    
-
-Bila buku dengan id yang dilampirkan **ditemukan**, maka _server_ harus mengembalikan respons dengan:
-
-*   Status Code : **200**
-*   Response Body:
-    
 ### Kriteria 6 : API dapat mengubah data buku
 
 API yang Anda buat harus dapat mengubah data buku berdasarkan id melalui _route_:
@@ -97,24 +79,6 @@ API yang Anda buat harus dapat mengubah data buku berdasarkan id melalui _route_
 *   URL : **/books/{bookId}**
 *   Body Request:
     
-Server harus merespons **gagal** bila:
-
-*   Client tidak melampirkan properti name pada _request body_. Bila hal ini terjadi, maka _server_ akan merespons dengan:
-    *   Status Code : **400**
-    *   Response Body:
-        
-*   Client melampirkan nilai properti readPage yang lebih besar dari nilai properti pageCount. Bila hal ini terjadi, maka _server_ akan merespons dengan:
-    *   Status Code : **400**
-    *   Response Body:
-        
-*   Id yang dilampirkan oleh _client_ tidak ditemukkan oleh _server_. Bila hal ini terjadi, maka _server_ akan merespons dengan:
-    *   Status Code : **404**
-    *   Response Body:
-        
-Bila buku **berhasil diperbarui**, _server_ harus mengembalikan respons dengan:
-
-*   Status Code : **200**
-*   Response Body:
     
 ### Kriteria 7 : API dapat menghapus buku
 
@@ -123,13 +87,5 @@ API yang Anda buat harus dapat menghapus buku berdasarkan id melalui _route_ be
 *   Method : **DELETE**
 *   URL: /books/{bookId}
 
-Bila id yang dilampirkan tidak dimiliki oleh buku manapun, maka _server_ harus mengembalikan respons berikut:
 
-*   Status Code : **404**
-*   Response Body:
-    
-Bila id dimiliki oleh salah satu buku, maka buku tersebut harus dihapus dan _server_ mengembalikan respons berikut:
-
-*   Status Code : **200**
-*   Response Body:
     
